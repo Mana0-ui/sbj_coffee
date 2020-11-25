@@ -7,3 +7,4 @@ export 'package:sbj_coffee/coffee_details/dark_roast.dart';
 export 'package:sbj_coffee/coffee_details/medium_roast.dart';
 
 export 'package:flutter/material.dart';
+export 'package:curved_navigation_bar/curved_navigation_bar.dart';
