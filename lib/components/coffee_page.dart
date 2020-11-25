@@ -33,7 +33,7 @@ class CoffeePage extends StatelessWidget {
             ),
           ),
           Card(
-            child: new InkWell(
+            child: InkWell(
               //クリックした時の処理
               onTap: () {
                 Navigator.push(
@@ -50,7 +50,7 @@ class CoffeePage extends StatelessWidget {
             ),
           ),
           Card(
-            child: new InkWell(
+            child: InkWell(
               //クリックした時の処理
               onTap: () {
                 Navigator.push(
@@ -84,7 +84,7 @@ class CoffeePage extends StatelessWidget {
             ),
           ),
           Card(
-            child: new InkWell(
+            child: InkWell(
               //クリックした時の処理
               onTap: () {
                 Navigator.push(context,
@@ -99,7 +99,7 @@ class CoffeePage extends StatelessWidget {
             ),
           ),
           Card(
-            child: new InkWell(
+            child: InkWell(
               //クリックした時の処理
               onTap: () {
                 //ダイアログを表示する
@@ -115,7 +115,7 @@ class CoffeePage extends StatelessWidget {
             ),
           ),
           Card(
-            child: new InkWell(
+            child: InkWell(
               //クリックした時の処理
               onTap: () {
                 //ダイアログを表示する
@@ -131,7 +131,7 @@ class CoffeePage extends StatelessWidget {
             ),
           ),
           Card(
-            child: new InkWell(
+            child: InkWell(
               //クリックした時の処理
               onTap: () {
                 Navigator.push(context,
@@ -146,7 +146,7 @@ class CoffeePage extends StatelessWidget {
             ),
           ),
           Card(
-            child: new InkWell(
+            child: InkWell(
               //クリックした時の処理
               onTap: () {
                 //ダイアログを表示する
@@ -162,7 +162,7 @@ class CoffeePage extends StatelessWidget {
             ),
           ),
           Card(
-            child: new InkWell(
+            child: InkWell(
               //クリックした時の処理
               onTap: () {
                 //ダイアログを表示する
@@ -178,7 +178,7 @@ class CoffeePage extends StatelessWidget {
             ),
           ),
           Card(
-            child: new InkWell(
+            child: InkWell(
               //クリックした時の処理
               onTap: () {
                 //ダイアログを表示する
@@ -194,7 +194,7 @@ class CoffeePage extends StatelessWidget {
             ),
           ),
           Card(
-            child: new InkWell(
+            child: InkWell(
               //クリックした時の処理
               onTap: () {
                 //ダイアログを表示する
@@ -227,7 +227,7 @@ class CoffeePage extends StatelessWidget {
             ),
           ),
           Card(
-            child: new InkWell(
+            child: InkWell(
               //クリックした時の処理
               onTap: () {
                 //ダイアログを表示する
@@ -243,7 +243,7 @@ class CoffeePage extends StatelessWidget {
             ),
           ),
           Card(
-            child: new InkWell(
+            child: InkWell(
               //クリックした時の処理
               onTap: () {
                 //ダイアログを表示する
@@ -259,7 +259,7 @@ class CoffeePage extends StatelessWidget {
             ),
           ),
           Card(
-            child: new InkWell(
+            child: InkWell(
               //クリックした時の処理
               onTap: () {
                 //ダイアログを表示する
@@ -275,7 +275,7 @@ class CoffeePage extends StatelessWidget {
             ),
           ),
           Card(
-            child: new InkWell(
+            child:  InkWell(
               //クリックした時の処理
               onTap: () {
                 //ダイアログを表示する
@@ -291,7 +291,7 @@ class CoffeePage extends StatelessWidget {
             ),
           ),
           Card(
-            child: new InkWell(
+            child: InkWell(
               //クリックした時の処理
               onTap: () {
                 //ダイアログを表示する
@@ -307,7 +307,7 @@ class CoffeePage extends StatelessWidget {
             ),
           ),
           Card(
-            child: new InkWell(
+            child: InkWell(
               //クリックした時の処理
               onTap: () {
                 //ダイアログを表示する
