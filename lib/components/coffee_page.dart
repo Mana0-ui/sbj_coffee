@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:sbj_coffee/coffee_details/blond_roast.dart';
-import 'package:sbj_coffee/coffee_details/dark_roast.dart';
-import 'package:sbj_coffee/coffee_details/medium_roast.dart';
+import 'package:sbj_coffee/importer.dart';
 
 class CoffeePage extends StatelessWidget {
   final String title;

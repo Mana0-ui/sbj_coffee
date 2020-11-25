@@ -1,8 +1,9 @@
 import 'package:sbj_coffee/importer.dart';
 
-class LikePage extends StatelessWidget {
+class HomePage extends StatelessWidget {
   final String title;
-  LikePage({@required this.title});
+  HomePage({@required this.title});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -10,7 +11,7 @@ class LikePage extends StatelessWidget {
           title: Text(title),
         ),
         body: Center(
-          child: Text('L'),
+          child: Text(title),
         ));
   }
 }

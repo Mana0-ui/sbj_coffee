@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:sbj_coffee/components/like_page.dart';
-import 'package:sbj_coffee/components/coffee_page.dart';
+import 'package:sbj_coffee/importer.dart';
 
 void main() {
   // 最初に表示するWidget
@@ -21,24 +19,24 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       // 最初の画面を表示
-      home: HomePage(),
+      home: NavigatorPage(),
     );
   }
 }
 
 //最初の画面を表示する
-class HomePage extends StatefulWidget {
+class NavigatorPage extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _NavigatorPageState createState() => _NavigatorPageState();
 }
 
 // リスト一覧画面用Widget
-class _HomePageState extends State<HomePage> {
+class _NavigatorPageState extends State<NavigatorPage> {
   // 表示中の Widget を取り出すための index としての int 型の mutable な stored property
   int _selectedIndex = 0;
   // 表示する Widget の一覧
   static List<Widget> _pageList = [
-    CustomPage(title: 'Home'),
+    HomePage(title: 'Home'),
     CoffeePage(title: 'Coffee'),
     LikePage(title: 'Like'),
   ];
@@ -72,22 +70,5 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       _selectedIndex = index;
     });
-  }
-}
-
-// ナビゲーションバーをタップした時に切り替わるWidgetの定義
-class CustomPage extends StatelessWidget {
-  final String title;
-  CustomPage({@required this.title});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text(title),
-        ),
-        body: Center(
-          child: Text(title),
-        ));
   }
 }
