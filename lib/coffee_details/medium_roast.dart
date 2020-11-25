@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
-class KdrPage extends StatelessWidget {
+class MediumRoast extends StatelessWidget {
+  String title;
+  MediumRoast({this.title});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('KDR'),
-        backgroundColor: Colors.deepPurple[800],
+        title: Text(title),
+        backgroundColor: Colors.orange,
       ),
       body: Container(
         height: double.infinity,

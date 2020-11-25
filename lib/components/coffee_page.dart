@@ -1,20 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sbj_coffee/coffee_details/wlb_page.dart';
-import 'package:sbj_coffee/coffee_details/lnb_page.dart';
-import 'package:sbj_coffee/coffee_details/brk_page.dart';
-import 'package:sbj_coffee/coffee_details/ken_page.dart';
-import 'package:sbj_coffee/coffee_details/edb_page.dart';
-import 'package:sbj_coffee/coffee_details/gua_page.dart';
-import 'package:sbj_coffee/coffee_details/bna_page.dart';
-import 'package:sbj_coffee/coffee_details/hou_page.dart';
-import 'package:sbj_coffee/coffee_details/clg_page.dart';
-import 'package:sbj_coffee/coffee_details/tyo_page.dart';
-import 'package:sbj_coffee/coffee_details/sum_page.dart';
-import 'package:sbj_coffee/coffee_details/kdr_page.dart';
-import 'package:sbj_coffee/coffee_details/ver_page.dart';
-import 'package:sbj_coffee/coffee_details/esp_page.dart';
-import 'package:sbj_coffee/coffee_details/fit_page.dart';
-import 'package:sbj_coffee/coffee_details/fre_page.dart';
+import 'package:sbj_coffee/coffee_details/blond_roast.dart';
+import 'package:sbj_coffee/coffee_details/dark_roast.dart';
+import 'package:sbj_coffee/coffee_details/medium_roast.dart';
 
 class CoffeePage extends StatelessWidget {
   final String title;
@@ -51,7 +38,7 @@ class CoffeePage extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => WlbPage()),
+                  MaterialPageRoute(builder: (context) => BlondRoast(title: "WlbPage")),
                 );
               },
               child: ListTile(
@@ -68,7 +55,7 @@ class CoffeePage extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => LnbPage()),
+                  MaterialPageRoute(builder: (context) => BlondRoast(title: "LnbPage")),
                 );
               },
               child: ListTile(
@@ -101,7 +88,7 @@ class CoffeePage extends StatelessWidget {
               //クリックした時の処理
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => BrkPage()));
+                    MaterialPageRoute(builder: (context) => MediumRoast(title: "BRK")));
               },
               child: ListTile(
                 leading: Image.asset('images/BRK.png'),
@@ -117,7 +104,7 @@ class CoffeePage extends StatelessWidget {
               onTap: () {
                 //ダイアログを表示する
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => KenPage()));
+                    MaterialPageRoute(builder: (context) => MediumRoast(title: "Ken")));
               },
               child: ListTile(
                 leading: Image.asset('images/KEN.png'),
@@ -133,7 +120,7 @@ class CoffeePage extends StatelessWidget {
               onTap: () {
                 //ダイアログを表示する
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => EdbPage()));
+                    MaterialPageRoute(builder: (context) => MediumRoast(title: "Edb")));
               },
               child: ListTile(
                 leading: Image.asset('images/EDB.png'),
@@ -148,7 +135,7 @@ class CoffeePage extends StatelessWidget {
               //クリックした時の処理
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => GuaPage()));
+                    MaterialPageRoute(builder: (context) => MediumRoast(title: "Gua")));
               },
               child: ListTile(
                 leading: Image.asset('images/GUA.png'),
@@ -164,7 +151,7 @@ class CoffeePage extends StatelessWidget {
               onTap: () {
                 //ダイアログを表示する
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => BnaPage()));
+                    MaterialPageRoute(builder: (context) => MediumRoast(title: "Bna")));
               },
               child: ListTile(
                 leading: Image.asset('images/BNA.png'),
@@ -180,7 +167,7 @@ class CoffeePage extends StatelessWidget {
               onTap: () {
                 //ダイアログを表示する
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => HouPage()));
+                    MaterialPageRoute(builder: (context) => MediumRoast(title: "Hou")));
               },
               child: ListTile(
                 leading: Image.asset('images/HOU.png'),
@@ -196,7 +183,7 @@ class CoffeePage extends StatelessWidget {
               onTap: () {
                 //ダイアログを表示する
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => ClgPage()));
+                    MaterialPageRoute(builder: (context) => MediumRoast(title: "Clg")));
               },
               child: ListTile(
                 leading: Image.asset('images/CLG.png'),
@@ -212,7 +199,7 @@ class CoffeePage extends StatelessWidget {
               onTap: () {
                 //ダイアログを表示する
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => TyoPage()));
+                    MaterialPageRoute(builder: (context) => MediumRoast(title: "Tyo")));
               },
               child: ListTile(
                 leading: Image.asset('images/TYO.png'),
@@ -245,7 +232,7 @@ class CoffeePage extends StatelessWidget {
               onTap: () {
                 //ダイアログを表示する
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => SumPage()));
+                    MaterialPageRoute(builder: (context) => DarkRoast(title: "Sum")));
               },
               child: ListTile(
                 leading: Image.asset('images/SUM.png'),
@@ -261,7 +248,7 @@ class CoffeePage extends StatelessWidget {
               onTap: () {
                 //ダイアログを表示する
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => KdrPage()));
+                    MaterialPageRoute(builder: (context) => DarkRoast(title: "Kdr")));
               },
               child: ListTile(
                 leading: Image.asset('images/KDR.png'),
@@ -277,7 +264,7 @@ class CoffeePage extends StatelessWidget {
               onTap: () {
                 //ダイアログを表示する
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => VerPage()));
+                    MaterialPageRoute(builder: (context) => DarkRoast(title: "Ver")));
               },
               child: ListTile(
                 leading: Image.asset('images/VER.png'),
@@ -293,7 +280,7 @@ class CoffeePage extends StatelessWidget {
               onTap: () {
                 //ダイアログを表示する
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => EspPage()));
+                    MaterialPageRoute(builder: (context) => DarkRoast(title: "Esp")));
               },
               child: ListTile(
                 leading: Image.asset('images/ESP.png'),
@@ -309,7 +296,7 @@ class CoffeePage extends StatelessWidget {
               onTap: () {
                 //ダイアログを表示する
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => FitPage()));
+                    MaterialPageRoute(builder: (context) => DarkRoast(title: "Fit")));
               },
               child: ListTile(
                 leading: Image.asset('images/FIT.png'),
@@ -325,7 +312,7 @@ class CoffeePage extends StatelessWidget {
               onTap: () {
                 //ダイアログを表示する
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => FrePage()));
+                    MaterialPageRoute(builder: (context) => DarkRoast(title: "Fre")));
               },
               child: ListTile(
                 leading: Image.asset('images/FRE.png'),

@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
-class SumPage extends StatelessWidget {
+class DarkRoast extends StatelessWidget {
+  String title;
+  DarkRoast({this.title});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('SUM'),
-        backgroundColor: Colors.deepPurple[800],
+        title: Text(title),
+        backgroundColor: Colors.orange,
       ),
       body: Container(
         height: double.infinity,
