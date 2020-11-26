@@ -23,6 +23,8 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
 class BottomNavBar extends StatefulWidget {
   @override
   _BottomNavBarState createState() => _BottomNavBarState();
@@ -56,7 +58,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
             Icon(Icons.favorite, size: 30),
           ],
           // color: Colors.white,
-          buttonBackgroundColor: Colors.white,
+          buttonBackgroundColor: Colors.yellow,
           animationCurve: Curves.easeInOut,
           animationDuration: Duration(milliseconds: 300),
           onTap: (index) {
