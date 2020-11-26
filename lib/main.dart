@@ -19,57 +19,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       // 最初の画面を表示
-      home: BottomNavBar(),
-    );
-  }
-}
-
-
-class BottomNavBar extends StatefulWidget {
-  @override
-  _BottomNavBarState createState() => _BottomNavBarState();
-}
-
-class _BottomNavBarState extends State<BottomNavBar> {
-  int _page = 0;
-  GlobalKey _bottomNavigationKey = GlobalKey();
-
-  static List<Widget> _pageList = [
-    HomePage(title: 'Home'),
-    CoffeePage(title: 'Coffee'),
-    LikePage(title: 'Like'),
-  ];
-  void ChosePage(int index)
-  {
-    setState(() {
-      _pageList[index];
-    });
-  }
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        bottomNavigationBar: CurvedNavigationBar(
-          key: _bottomNavigationKey,
-          index: 0,
-          height: 50.0,
-          items: <Widget>[
-            Icon(Icons.home, size: 30),
-            Icon(Icons.local_cafe, size: 30),
-            Icon(Icons.favorite, size: 30),
-          ],
-          // color: Colors.white,
-          buttonBackgroundColor: Colors.yellow,
-          animationCurve: Curves.easeInOut,
-          animationDuration: Duration(milliseconds: 300),
-          onTap: (index) {
-            setState(() {
-              _page = index;
-              ChosePage(index);
-            });
-          },
-          backgroundColor: Colors.green,
-        ),
-      body: _pageList[_page],
+      home: BottomBar(),
     );
   }
 }
